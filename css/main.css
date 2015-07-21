@@ -1,0 +1,86 @@
+/*
+ *= require bootstrap/dist/css/bootstrap.min.css
+ *= require_self
+ */
+
+/* TODO: get a gradient background */
+/*
+.main-bg{
+ background-color:#F0FFFF;   
+}
+*/
+
+/* TODO: what does this do? */
+/*
+section, header {
+  background-color: #fff;
+}
+*/
+
+
+
+
+.footer {
+  color: #fff;
+  background-color: #222;
+}
+
+
+.features .glyphicon {
+  font-size: 24px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+
+.footer {
+  /* Push footer contents down */
+  padding: 20px 0;
+}
+
+
+
+
+/* 
+Make sure the footer sticks to the bottom 
+*/
+
+html {
+  /* Both help set the footer at the bottom of the page */
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+  /* Pushes the height of the bottom footer size */ 
+  margin-bottom: 200px;
+}
+
+
+/* cng */
+.footer a {
+  color: #9af7fe;
+}
+
+.footer {
+    
+  /* Help with mobile to push footer to the very bottom */
+  position: absolute;
+  bottom: 0;
+  
+  /* With position:absolute and bottom: 0, this makes sure footer takes up whole area */
+  width: 100%;
+  
+  /* Set the fixed height of footer */ 
+  height: 200px;
+}
+
+
+/* At this size, we need to give the footer more room. These two element styles make that happen */ 
+@media only screen and (max-width: 768px) {
+  body { margin-bottom: 400px; }
+  .footer { height: 400px; }
+}
